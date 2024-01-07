@@ -6,43 +6,53 @@
     <meta name="keywords" content="cv, skills, jobs, IT, Den Khvan">
     <meta name="description" content="Web CV by Pak Den Khvan">
     <title>CV</title>
-    <style>
-        .info {
-            background-color: azure;
-            width: 400px;
-        }
-        .table {
-            background-color: azure;
-            width: 400px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <img src="imgs/photo.jpg" width="150" alt="">
-    <h1>Den Khvan Pak</h1>
-
-    <p>I'm Bc student in <strong>University of South Bohemia.</strong></p>
-    <div id="info" class="info">
-        I'm student, currently working on <strong>Entomology laboratory as research assistant</strong> and searching trainee programs or internship in IT companies.
+    <div class="container">
+        <div class="profile">
+    <img src="imgs/photo.jpg"alt="" class="photo row">
+    
+    <header>
+        
+        <div id="info" class="card darkcard row">
+            <h1>Den Khvan Pak</h1>
+            <p>I'm student, currently working on <strong>Entomology laboratory as research assistant</strong> and searching trainee programs or internship in IT companies.</p>
+            
+            <div class="info-text">
+            <h3> My links:</h3>
+            <p><a href="https://linkedin.com/in/den-khvan-pak" target="_blank">linkedin</a> | <a href="https://github.com/Cornum" target="_blank">github</a></p>
+            </div>
     </div>
+</header>
+</div>
+<div class="card">
+    <h3><img src="imgs/icon_mark.png" alt="" class="icon"> Skills:</h3>
 
-    <h3>Skills:</h3>
-
-    <div id="skills"></div>
-    <ul type="square">
+    <div id="skills" class="list-row">
+    <ul type="square" class="lists">
         <li>C#</li>
         <li>PostreSQL</li>
         <li>JavaScript</li>
         <li>Git</li>
     </ul>
+    <ul type="square" class="lists">
+        <li>Docker</li>
+        <li>HTML + CSS</li>
+        <li>Laboratory</li>
+        <li>Arduino</li>
+    </ul>
+</div>
+</div>
 
-    <div id="experience" class="table">
-    <h3>Work experience</h3>
-    <table>
+    <div id="experience" class="card darkcard">
+    <h3><img src="imgs/Icon_pc.png" alt="" class="icon"> Work experience</h3>
+    <table class="table">
         <thead>
             <tr>
                 <th>Company</th>
-                <th>Job</th>
+                <th>Position</th>
                 <th>Years</th>
             </tr>
         </thead>
@@ -62,30 +72,29 @@
     </table>
     </div>
 
-    <h4>My links:</h4>
-     
-    <p><a href="https://linkedin.com/in/den-khvan-pak" target="_blank">linkedin</a> | <a href="https://github.com/Cornum" target="_blank">github</a></p>
 
-    <h4>Feedback *in progress</h4>
-    <div>
-        <label for="name">Your name</label>
-        <input type="text" id="name" placeholder="Type your name">
+    <footer class="card form">
+    <h3>Feedback *in progress</h3>
+    <div class="form-row">
+    <div class="form-text">
+        <label for="name">Your name: </label>
+        <input type="text" id="name" class="input" placeholder=" Type your name">
     </div>
 
-    <div>
-        <label for="email">Your email</label>
-        <input type="email" id="email" placeholder="Type your email">
+    <div class="form-text">
+        <label for="email">Your email: </label>
+        <input type="email" id="email" class="input" placeholder=" Type your email">
     </div>
 
-    <div>
+</div>
+    <div class="form-text">
         <label for="message">Your message</label>
-        <br>
-        <textarea id="message" cols="30" rows="5" placeholder="Your message"></textarea>
+        <textarea id="message" cols="30" rows="5" placeholder=" Your message"></textarea>
     </div>
-
-    <div>
-        <input type="submit" value="Send">
-    </div>
-    
+    <p>
+        <button class="btn">Send.</button>
+    </p>
+</footer>
+ </div>   
 </body>
 </html>

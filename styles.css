@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+            margin: 0;
+            padding: 0;
+}
+body{
+    background: #F4F5FA;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.container{
+    max-width: 750px;
+    margin: auto;
+}
+
+.card{
+    padding: 20px;
+    border: 2px solid #323b4c;
+    border-radius: 10px;
+    /* width: fit-content; */
+}
+
+.darkcard {
+    h3{
+        border: 2px solid white;
+    }
+    background-color: #323b4c;
+    color: white;
+}
+
+h3{
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.photo{
+    border: 2px solid black;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.icon{
+    width: 25px;
+}
+
+.profile{
+    display: flex;
+    width:fit-content;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+.info-text{
+    margin-top: 20px;
+}
+.info-text p{
+    text-align: center;
+}
+.profile .card{
+    display: inline-block;
+}
+
+.btn{
+    background: lightgray;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10%;
+    font-family: inherit;
+    cursor: pointer;
+}
+.btn:hover{
+    color: green;
+    opacity: 0.7;
+}
+.btn:active{
+    background: lightgreen;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #F4F5FA;
+}
+a:hover{
+color: aquamarine;
+text-decoration: underline;
+}
+a:active{
+color: blue;
+}
+a:visited{
+    text-decoration: line-through;
+}
+
+.lists{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.lists li{
+    margin-left: 15px;
+    margin-top: 2px;
+}
+.lists li:nth-child(even):hover{
+    border: 1px solid black;
+    width: fit-content;
+}
+.lists li:nth-child(odd):hover{
+    border: 1px dashed black;
+    width: fit-content;
+}
+.list-row{
+    display: flex;
+}
+.list-row .lists{
+    width: 50%;
+}
+
+.table th{
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.table td{
+    text-align: center;
+}
+
+
+.form-text label{
+    display: block;
+    margin: 5px 0px 5px;
+}
+.form-text:first-child{
+    margin-right: 30px;
+}
+.form-text input, .form-text textarea{
+    width: 100%;
+    border: none;
+    padding: 10px 0 10px;
+    border-bottom: 1px solid #323b4c;
+    outline: none;
+    font-family: inherit;
+    /* box-sizing: border-box; */
+}
+.form-row{
+    margin-bottom: 10px;
+    display: flex;
+}
+.form-row .form-text{
+    width: 50%;
+}
+
+
+@media (max-width: 650px){
+    body{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .lists{
+        text-align: left;
+    }
+}
