@@ -7,94 +7,99 @@
     <meta name="description" content="Web CV by Pak Den Khvan">
     <title>CV</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="imgs/icon.jpg">
 </head>
 
 <body>
     <div class="container">
         <div class="profile">
-    <img src="imgs/photo.jpg"alt="" class="photo row">
+            <img src="imgs/photo.jpg"alt="" class="photo row">
     
-    <header>
-        
-        <div id="info" class="card darkcard row">
-            <h1>Den Khvan Pak</h1>
-            <p>I'm student, currently working on <strong>Entomology laboratory as research assistant</strong> and searching trainee programs or internship in IT companies.</p>
-            
-            <div class="info-text">
-            <h3> My links:</h3>
-            <p><a href="https://linkedin.com/in/den-khvan-pak" target="_blank">linkedin</a> | <a href="https://github.com/Cornum" target="_blank">github</a></p>
+            <header>
+                <div id="info" class="card darkcard row">
+                    <h1>Den Khvan Pak</h1>
+                    <p>I'm student, currently working on <strong>Entomology laboratory as research assistant</strong> and searching trainee programs or internship in IT companies.</p>
+                    
+                    <div class="info-text">
+                        <h3> My links:</h3>
+                        <p class="links"><a href="https://linkedin.com/in/den-khvan-pak" class="aInfo" target="_blank">linkedin</a> | <a href="https://github.com/Cornum" class="aInfo" target="_blank">github</a> | <a href="mailto:cornumSumar@gmail.com" class="aInfo" target="_blank">email</a></p>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="card">
+            <h3><img src="imgs/icon_mark.png" alt="" class="icon"> Skills:</h3>
+
+            <div id="skills" class="list-row">
+                <ul type="square" class="lists">
+                    <li>C#</li>
+                    <li>PostreSQL</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                </ul>
+                <ul type="square" class="lists">
+                    <li>Docker</li>
+                    <li>HTML + CSS</li>
+                    <li>Laboratory</li>
+                    <li>Arduino</li>
+                </ul>
             </div>
-    </div>
-</header>
-</div>
-<div class="card">
-    <h3><img src="imgs/icon_mark.png" alt="" class="icon"> Skills:</h3>
+        </div>
 
-    <div id="skills" class="list-row">
-    <ul type="square" class="lists">
-        <li>C#</li>
-        <li>PostreSQL</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-    </ul>
-    <ul type="square" class="lists">
-        <li>Docker</li>
-        <li>HTML + CSS</li>
-        <li>Laboratory</li>
-        <li>Arduino</li>
-    </ul>
-</div>
-</div>
+        <div id="experience" class="card darkcard">
+            <h3><img src="imgs/Icon_pc.png" alt="" class="icon"> Work experience</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Company</th>
+                        <th>Years</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Student research assistant</td>
+                        <td>Institute of Entomology
+                            Academy of Sciences of the Czech Republic</td>
+                        <td>2023.11-now</td>
+                    </tr>
+                    <tr>
+                        <td>Student developer</td>
+                        <td>Bachelor's Thesis Project</td>
+                        <td>2023.6-2024.4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <div id="experience" class="card darkcard">
-    <h3><img src="imgs/Icon_pc.png" alt="" class="icon"> Work experience</h3>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Company</th>
-                <th>Position</th>
-                <th>Years</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Institute of Entomology
-                    Academy of Sciences of the Czech Republic</td>
-                <td>Student research assistant</td>
-                <td>2023-...</td>
-            </tr>
-            <tr>
-                <td>Bachelor's Thesis Project</td>
-                <td>Student</td>
-                <td>2023-2024</td>
-            </tr>
-        </tbody>
-    </table>
-    </div>
+        <div id="files" class="card">
+            <h3>Files</h3>
+            <p class="pFiles">For more information u can download my <strong>CV</strong> in PDF format: <a href="CV_Pak_Den_Khvan.pdf" download="" class="aFiles"><img src="imgs/icon_pdf.jpg" class="iconPdf" alt=""> My CV</a></p>
+        </div>
 
 
-    <footer class="card form">
-    <h3>Feedback *in progress</h3>
-    <div class="form-row">
-    <div class="form-text">
-        <label for="name">Your name: </label>
-        <input type="text" id="name" class="input" placeholder=" Type your name">
-    </div>
+        <!-- <footer class="card form">
+            <h3>Feedback</h3>
+            <div class="form-row">
+                <div class="form-text">
+                    <label for="name">Your name: </label>
+                    <input type="text" id="name" class="input" placeholder=" Type your name">
+                </div>
 
-    <div class="form-text">
-        <label for="email">Your email: </label>
-        <input type="email" id="email" class="input" placeholder=" Type your email">
-    </div>
-
-</div>
-    <div class="form-text">
-        <label for="message">Your message</label>
-        <textarea id="message" cols="30" rows="5" placeholder=" Your message"></textarea>
-    </div>
-    <p>
-        <button class="btn">Send.</button>
-    </p>
-</footer>
- </div>   
+                <div class="form-text">
+                    <label for="email">Your email: </label>
+                    <input type="email" id="email" class="input" placeholder=" Type your email">
+                </div>
+            </div>
+            <div class="form-text">
+                <label for="message">Your message</label>
+                <textarea id="message" cols="30" rows="5" placeholder=" Your message"></textarea>
+            </div>
+            <p>
+                <button class="btn">Send.</button>
+            </p>
+        </footer> -->
+    </div>   
 </body>
 </html>

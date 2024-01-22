@@ -17,7 +17,7 @@ body{
 
 .card{
     padding: 20px;
-    border: 2px solid #323b4c;
+    border: 2px solid #252525;
     border-radius: 10px;
     /* width: fit-content; */
 }
@@ -26,7 +26,7 @@ body{
     h3{
         border: 2px solid white;
     }
-    background-color: #323b4c;
+    background-color: #252525;
     color: white;
 }
 
@@ -64,6 +64,9 @@ h3{
 .profile .card{
     display: inline-block;
 }
+.pFiles{
+    margin: 15px 0 15px;
+}
 
 .btn{
     background: lightgray;
@@ -82,19 +85,26 @@ h3{
     color: #000;
 }
 
-a{
+.aInfo{
     text-decoration: none;
     color: #F4F5FA;
 }
 a:hover{
-color: aquamarine;
-text-decoration: underline;
+    color: aquamarine;
+    text-decoration: underline;
 }
 a:active{
-color: blue;
+    color: blue;
 }
 a:visited{
     text-decoration: line-through;
+}
+.links{
+    padding-top: 10px;
+}
+.aFiles{
+    text-decoration: underline;
+    color: #252525;
 }
 
 .lists{
@@ -157,6 +167,9 @@ a:visited{
     width: 50%;
 }
 
+.iconPdf{
+    width: 20px;
+}
 
 @media (max-width: 650px){
     body{
